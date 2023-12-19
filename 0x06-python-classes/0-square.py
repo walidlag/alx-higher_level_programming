@@ -2,6 +2,6 @@
 """Defines a class aquare."""
 
 
-class square:
+class Square:
     """Defines a class aquare."""
     pass
