@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""square module for python 0x06."""
+"""Defines a class aquare."""
 
 
-class Square:
-    """Define a square."""
+class aquare:
+    """Defines a class aquare."""
     pass

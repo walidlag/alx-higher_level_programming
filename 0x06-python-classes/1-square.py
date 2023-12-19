@@ -1,14 +1,12 @@
 #!/usr/bin/python3
-"""square module for python 0x06."""
+"""Defines a class aquare."""
 
 
-class square:
-    """Defines a square."""
-    
-    def _init_(self, size):
-        """Constructor.
-
+class Square:
+    """Defines a class aquare."""
+    def __init__(self, size):
+        """initialize square
         Args:
-            size: length of a side of the square.
-            """
-            self.__size = size
+            size (int): size of the square
+        """
+        self.__size = size
