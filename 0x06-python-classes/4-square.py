@@ -4,29 +4,23 @@
 
 class Square:
     """Defines a class aquare."""
+
     def __init__(self, size=0):
-        """ init square
-
-        Args:
-            value (int): size of the square.
-        """
-        self.size = size
-
-    @property
-    def size(self):
-        """initialize square
-
-        Returns:
-            Private size.
-        """
-        return self.__size
-
-    @size.setter
-     def __init__(self, size=0):
         """initialize square
         Args:
             size (int): size of the square
         """
+        self.__size = size
+
+    @property
+    def size(self):
+        """initialize square
+        Args:
+            size (int): size of the square
+        """
+        return self.__size
+
+    @size.setter
         if type(size) is not int:
             raise TypeError('size must be an integer')
         elif size < 0:
