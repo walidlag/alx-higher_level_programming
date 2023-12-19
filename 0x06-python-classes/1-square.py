@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Square module."""
+"""square module for python 0x06."""
 
 
 class Square:
-    """Define a class Square."""
+    """Define a Square."""
      
     def __init__(self, size):
         """Initialize a new Square.
