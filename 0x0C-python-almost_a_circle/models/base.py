@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 '''Module for Base class.'''
-from json import dumps, loads
-import csv
 
 
 class Base:
@@ -16,4 +14,3 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-
