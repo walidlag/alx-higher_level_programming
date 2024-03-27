@@ -29,3 +29,4 @@ def find_peak(sequence_of_integers):
         subsequence = sequence_of_integers[mid_index + 1:]
 
     return find_peak(subsequence)
+
