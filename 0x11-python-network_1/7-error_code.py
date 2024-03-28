@@ -7,9 +7,8 @@ The script will send a request to the given URL, showing the response body if th
 
 
 if __name__ == "__main__":
-    url = argv[1]
-
-    response = get(url)
-    ERR_TXT = 'Error code: {}'
-    status = response.status_code
-    print(ERR_TXT.format(status) if (status >= 400) else response.text)
+    response = requests.get(sys.argv[1])
+    if response.status_code >= 400:
+        print("Error code: {}".format(response.status_code))
+    else:
+        print(response.text)
