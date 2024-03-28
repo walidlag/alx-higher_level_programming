@@ -2,13 +2,13 @@
 """
 Utilizes your GitHub credentials (username and password) to access the GitHub API and showcase your user ID
 """
-from requests import get
 from sys import argv
+import requests
+from requests.auth import HTTPBasicAuth
+
 
 if __name__ == "__main__":
-    username = argv[1]
-    password = argv[2]
+    auth = HTTPBasicAuth(argv[1], argv[2])
+    req = requests.get("https://api.github.com/user", auth=auth)
 
-    URL = "https://api.github.com/user"
-    response = get(URL, auth=HTTPBasicAuth(username, password))
-    print(response.json().get('id'))
+    print(req.json().get("id"))
