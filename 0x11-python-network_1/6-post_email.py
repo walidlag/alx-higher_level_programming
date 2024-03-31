@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 Initiates a POST request to the provided URL, including the email as a parameter, 
-and then showcases the response body"""
+and then showcases the response body
+"""
 import requests
 from sys import argv
 
